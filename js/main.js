@@ -13,5 +13,5 @@ jQuery(function($) {
 
   // append a div with the height contained in it
   $(".main .first").after('<div class="info p2 mbp"></div>');
-  $(".info").append('<span>The paragraph above is <h1 class="inline mt0 mx1">' + height + '</h1> pixels tall</span>');
+  $(".info").append('<span class="bold">The paragraph above is <h1 class="inline mt0 mx1">' + height + '</h1> pixels tall</span>');
 });
