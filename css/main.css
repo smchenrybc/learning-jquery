@@ -106,22 +106,19 @@ body {
   font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
   background-color: #FAFAFA;
 }
-#block {
-  padding: 2rem;
-  margin-top: 2000px;
-  background-color: pink;
-}
-#block :last-child {
-  margin-bottom: 0;
-}
-.info {
-  background-color: cyan;
+.mtp {
+  margin-top: 1.3em;
 }
 .mbp {
   margin-bottom: 1.3em;
 }
-
-
+.block :last-child {
+  margin-bottom: 0;
+}
+#block-3 {
+  padding: 2rem;
+  margin-top: 500px;
+}
 
 
 
