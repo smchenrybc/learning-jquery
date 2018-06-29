@@ -14,4 +14,8 @@ jQuery(function($) {
   // append a div with the height contained in it
   $(".main > div:first-of-type").append('<div class="block-inner p2 mtp bg-teal"></div>');
   $("#block-1 .block-inner").append('<span class="bold">The paragraph above is <h1 class="inline mt0 mx1">' + height + '</h1> pixels tall</span>');
+
+
+  // animate one of the buttons
+  $("#block-4 a").text('Click me!');
 });
