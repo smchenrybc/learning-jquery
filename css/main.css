@@ -106,6 +106,8 @@ body {
   font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
   background-color: #FAFAFA;
 }
+
+/* Global */
 .mtp {
   margin-top: 1.3em;
 }
@@ -121,8 +123,10 @@ body {
 div[class*="bg-"] {
   padding: 2rem;
 }
-#block-4 {
-  margin-top: 500px;
+
+/* Specific */
+#block-5 {
+  margin-top: 1000px;
 }
 
 
