@@ -112,11 +112,16 @@ body {
 .mbp {
   margin-bottom: 1.3em;
 }
+.block {
+  margin-bottom: 1.3em;
+}
 .block :last-child {
   margin-bottom: 0;
 }
-#block-3 {
+div[class*="bg-"] {
   padding: 2rem;
+}
+#block-4 {
   margin-top: 500px;
 }
 
