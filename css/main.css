@@ -107,13 +107,18 @@ body {
   background-color: #FAFAFA;
 }
 
-/* Global */
+/* Helpers */
 .mtp {
   margin-top: 1.3em;
 }
 .mbp {
   margin-bottom: 1.3em;
 }
+.clear {
+  clear: both;
+}
+
+/* Global */
 .block {
   margin-bottom: 1.3em;
 }
@@ -125,8 +130,16 @@ div[class*="bg-"] {
 }
 
 /* Specific */
-#block-5 {
+#box-area {
   margin-top: 1000px;
+}
+.boxes .box {
+  position: relative;
+  display: inline-block;
+  margin: 0 1.0em 1.0em 0;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
 }
 
 
