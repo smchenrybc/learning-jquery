@@ -5,7 +5,7 @@
 jQuery(function($) {
   /* Block #1 */
   // get the height of the first paragraph
-  var height = $('.main :first-child').height();
+  var height = $('#block-1 p').height();
 
   // append a div with the height contained in it
   $(".main > div:first-of-type").append('<div class="block-inner p2 mtp bg-teal"></div>');
@@ -90,5 +90,21 @@ jQuery(function($) {
         });
       });
     });
+  });
+
+  /* Block #3 */
+  $('#block-3 textarea').on("focus", function() {
+    // insert counting text
+    $(this).after('<p class="mb0">There are <code><span>0</span></code> characters.</p>' );
+
+    // count length of text in text area and
+    // insert it into the <p> from above
+    $(this).on("keyup", function() {
+      var taLength = $(this).val().length;
+      $('#block-3 p span').html(taLength);
+    });
+  });
+  $('#block-3 textarea').on("focusout", function() {
+    $('#block-3 p.mb0').remove();
   });
 });
