@@ -3,6 +3,7 @@
  */
 
 jQuery(function($) {
+  /* Block #1 */
   // get the height of the first paragraph
   var height = $('.main :first-child').height();
 
@@ -11,6 +12,7 @@ jQuery(function($) {
   $("#block-1 .block-inner").append('<span class="bold">The paragraph above is <h1 class="inline mt0 mx1">' + height + '</h1> pixels tall</span>');
 
 
+  /* Box Area */
   // set up animation for each box
   function animateBox() {
     box = $(this);
@@ -49,4 +51,44 @@ jQuery(function($) {
   // animate all boxes if the button
   // below them is clicked
   $('#box-area .btn').on("click", animateBoxes);
+
+
+  /* Block #5 */
+  var theBox = $('#block-5 .box');
+
+  theBox.on("click", function() {
+    // set height to zero
+    $(this).animate({
+      "height": 0
+    }, 1000, function() {
+      // remove margin class
+      $(this).removeClass('mtp');
+
+      // remove border, move left
+      $(this).animate({
+        "border-width": 0
+      }, 100, function() {
+        // set clicker
+        var clicker = $('p.clicker');
+
+        // append span
+        clicker.append(' <span class="block purple">Show again?</span>');
+
+        // and click to span
+        clicker.find("span").on("click", function() {
+          // add margin class
+          theBox.addClass('mtp');
+
+          // animate border width and height
+          theBox.animate({
+            "border-width": "1px",
+            "height": "100px"
+          });
+
+          // remove span on click
+          $(this).remove();
+        });
+      });
+    });
+  });
 });
