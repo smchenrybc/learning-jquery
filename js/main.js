@@ -3,6 +3,7 @@
  */
 
 jQuery(function($) {
+
   /*
   Block #1
    */
@@ -94,6 +95,21 @@ jQuery(function($) {
   });
 
   /*
+  Block #7
+   */
+  $('#email-form').on("submit", function(event) {
+    event.preventDefault();
+
+    // trigger event with custom name
+    $(this).trigger("save");
+  });
+
+  // run custom event from above
+  $('#email-form').on("save", function() {
+    console.log(this);
+  });
+
+  /*
   Box Area
    */
   // set up animation for each box
@@ -134,4 +150,5 @@ jQuery(function($) {
   // animate all boxes if the button
   // below them is clicked
   $('#box-area .btn').on("click", animateBoxes);
+
 });

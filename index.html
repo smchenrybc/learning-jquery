@@ -33,15 +33,15 @@
     <h1 class="bold">Learning jQuery</h1>
 
     <!-- Block #1 -->
-    <div id="block-1" class="block">
+    <div id="block-1" class="blocks">
       <p>Adipisicing proident amet occaecat in mollit consequat est aliquip eiusmod ex. Cillum commodo fugiat adipisicing id ut reprehenderit voluptate ea commodo. In laborum dolor ea et officia dolor eu do. Elit officia in id consequat eu ea nisi in ex ad <code>nostrud</code> non anim adipisicing aliquip cupidatat. Dolor aliqua nostrud ex do irure proident aliqua dolore culpa nulla dolore dolor consectetur incididunt commodo. Ut officia duis nostrud elit ullamco aute dolore ut ex dolore in aliquip mollit occaecat voluptate consectetur.</p>
 
       <!-- Character used below: https://dev.w3.org/html5/html-author/charref -->
-      <a id="block-1-btn" class="btn btn--s btn--gray-border mb2" href="#block-7">Go to bottom &dtrif;</a>
+      <a id="block-1-btn" class="btn btn--s btn--gray-border mb2" href="#block-8">Go to bottom &dtrif;</a>
     </div>
 
     <!-- Block #2 -->
-    <div id="block-2" class="block mt4 bg-yellow">
+    <div id="block-2" class="blocks mt4 bg-yellow">
       <h2 class="mt0">List Area</h2>
       <ul class="mt0">
         <li>Ex voluptate dolore pariatur occaecat duis mollit in do labore commodo ex exercitation cupidatat deserunt reprehenderit non sint. Dolore laboris velit do minim aliqua dolor in nostrud duis dolor proident anim laborum voluptate.</li>
@@ -53,7 +53,7 @@
     </div>
 
     <!-- Block #3 -->
-    <div id="block-3" class="block bg-aqua">
+    <div id="block-3" class="blocks bg-aqua">
       <p>Lorem ipsum in veniam voluptate dolore consequat exercitation aliquip labore ut culpa veniam proident in velit consequat amet anim aliquip mollit. Fugiat aliquip ullamco officia eiusmod ut aliqua velit et officia excepteur deserunt in minim.ÚIn do reprehenderit quis officia officia tempor sint ad deserunt amet.</p>
 
       <p>Lorem ipsum reprehenderit quis pariatur quis est voluptate esse do do voluptate. Sint ad cupidatat qui elit ad laborum consectetur sed mollit in dolore ut id labore sed amet deserunt excepteur. Ut dolor aliquip dolore quis culpa ex fugiat deserunt tempor esse.</p>
@@ -62,7 +62,7 @@
     </div>
 
     <!-- Block #4 -->
-    <div id="block-4" class="block white bg-navy">
+    <div id="block-4" class="blocks white bg-navy">
       <p>Lorem ipsum esse minim dolore cupidatat do nostrud in nulla incididunt quis quis ut enim et fugiat consequat ea sit. Magna in excepteur esse culpa pariatur irure duis in nulla exercitation ut cillum dolore. Lorem ipsum culpa ut sed ex et aliqua fugiat fugiat consequat proident veniam labore est. Sint aute anim in excepteur consequat officia in pariatur eu eu cillum in aute ut laborum incididunt. Id deserunt qui elit in ut tempor ea exercitation in proident sit sunt eiusmod.</p>
 
       <p>Tempor in amet duis sint nisi mollit amet excepteur esse sed aute sint sunt do in laboris occaecat ex. Ut nulla ad reprehenderit dolore nostrud aliquip minim fugiat veniam veniam in. Labore et aliquip esse in tempor velit ad enim quis mollit amet fugiat mollit laborum culpa ut.</p>
@@ -73,7 +73,7 @@
     </div>
 
     <!-- Block #5 -->
-    <div id="block-5" class="block bg-silver">
+    <div id="block-5" class="blocks bg-silver">
       <p>Ea minim dolore laboris pariatur magna sunt duis non sit anim consequat. Ut ut velit deserunt cillum magna culpa elit sit irure adipisicing ut dolor eu aliquip veniam non. Fugiat ea ut deserunt incididunt reprehenderit fugiat in culpa occaecat laborum commodo non ad fugiat dolor. Voluptate aliqua magna commodo commodo consectetur magna dolor amet veniam.</p>
 
       <p class="clicker mb0"><b>Click the box below:</b></p>
@@ -81,11 +81,21 @@
     </div>
 
     <!-- Block #6 -->
-    <div id="block-6" class="block bg-white border border--blue mt4 mb4">
+    <div id="block-6" class="blocks bg-white border border--blue mt4 mb4">
       <p class="blue">Ut ut nostrud ad dolore nostrud ad nisi amet dolore ut dolore non excepteur cupidatat exercitation nulla. Labore aute do quis anim velit magna aliquip mollit nulla velit labore. Lorem ipsum mollit excepteur et elit reprehenderit adipisicing elit dolor et ea dolor laborum labore officia dolor ex qui eu. Ad amet sed ad deserunt est voluptate aute nostrud laboris fugiat voluptate ut enim veniam.</p>
 
       <a id="b6-btn-1" class="btn btn--s btn--blue nowrap mr1 event" href="javascript:void(0)">Click me forever!</a>
       <a id="b6-btn-2" class="btn btn--s btn--blue nowrap" href="javascript:void(0)">You can only click me once!</a>
+    </div>
+
+    <div id="block-7" class="blocks bg-white border border--olive">
+      <p class="olive">Esse cillum velit deserunt tempor nisi nisi ullamco quis non et sed in excepteur veniam occaecat et sint. Est in voluptate duis id mollit minim duis pariatur esse dolore minim nulla sint in laboris. Veniam sit commodo nisi cupidatat in aliquip veniam nisi adipisicing id sunt dolore consequat officia quis aliquip. Laboris aliqua amet qui deserunt minim ullamco tempor dolor esse eiusmod est laboris.</p>
+
+      <form id="email-form">
+        <label class="block bold mb1">Email Address</label>
+        <input class="block mb2" type="email" name="email" placeholder="Your email address" />
+        <input class="btn btn--s btn--gray" type="submit" value="Submit" />
+      </form>
     </div>
 
     <!-- Box Area -->
@@ -101,13 +111,13 @@
       </div>
     </div>
 
-    <!-- Block #7 -->
-    <div id="block-7" class="block bg-gray">
+    <!-- Block #8 -->
+    <div id="block-8" class="blocks bg-gray">
       <p>Everybody's favorite: concept video time! Callbacks are an important concept in JavaScript. They are functions that are called when an action has completed running. Then lend structure and timing to our code.</p>
 
       <p>Take for example the animation we used in the last video. Animations take time to run. What if you want to have something else happen right when that animation finishes? Do you have to do a <code>setTimeout</code> for the same length as the animation? Nope. jQuery gives us callback functions used just for that purpose.</p>
 
-      <p><strong>Last video watched was: <a href="https://css-tricks.com/lodge/learn-jquery/13-intro-events" target="_blank">#13: Intro To Events</a>.</strong></p>
+      <p><strong>Last video watched was: <a href="https://css-tricks.com/lodge/learn-jquery/14-custom-events" target="_blank">#14: Custom Events</a>.</strong></p>
     </div>
 
     <div class="right mbp">

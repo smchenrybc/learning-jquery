@@ -13,7 +13,8 @@
   text-decoration:none;
   text-transform:uppercase;
   -webkit-transition:color .4s,background-color .4s,border .4s;
-  transition:color .4s,background-color .4s,border .4s
+  transition:color .4s,background-color .4s,border .4s;
+  cursor: pointer;
 }
 .btn:hover,.btn:focus{
   color:#7FDBFF;

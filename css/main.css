@@ -133,7 +133,7 @@ code {
 }
 
 /* Global */
-.block {
+.blocks {
   margin-bottom: 1.3em;
 }
 .block :last-child {
@@ -187,7 +187,11 @@ textarea {
   border: 1px solid #999999;
   border-radius: 2px;
 }
-
+#block-7 input[type="email"] {
+  padding: 0.5em;
+  border: 1px solid #CCCCCC;
+  border-radius: 2px;
+}
 
 
 
