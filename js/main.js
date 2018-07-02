@@ -62,7 +62,7 @@ jQuery(function($) {
       "height": 0
     }, 1000, function() {
       // remove margin class
-      $(this).removeClass('mtp');
+      $(this).removeClass('mt2');
 
       // remove border, move left
       $(this).animate({
@@ -72,12 +72,15 @@ jQuery(function($) {
         var clicker = $('p.clicker');
 
         // append span
-        clicker.append(' <span class="block purple">Show again?</span>');
+        clicker.append(' <span class="block purple mt2 line-height-1">Show again?</span>');
+
+        // set span var
+        var theSpan = $('#block-5 span');
 
         // and click to span
-        clicker.find("span").on("click", function() {
+        theSpan.on("click", function() {
           // add margin class
-          theBox.addClass('mtp');
+          theBox.addClass('mt2');
 
           // animate border width and height
           theBox.animate({
@@ -86,7 +89,7 @@ jQuery(function($) {
           });
 
           // remove span on click
-          $(this).remove();
+          theSpan.remove();
         });
       });
     });
