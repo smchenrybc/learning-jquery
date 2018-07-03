@@ -9,7 +9,9 @@ html {
   box-sizing: inherit;
 }
 body {
-  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  /* Font fallbacks from: */
+  /* https://www.cssfontstack.com */
+  font-family: "Roboto", Arial, "Helvetica Neue", Helvetica, sans-serif;
   background-color: white;
 }
 code {

@@ -5,6 +5,15 @@
 jQuery(function($) {
 
   /*
+  Web Fonts
+   */
+  WebFont.load({
+    google: {
+      families: ['Roboto:300,400,400i,500,700']
+    }
+  });
+
+  /*
   Block #1
    */
   // get the height of the first paragraph
@@ -114,7 +123,7 @@ jQuery(function($) {
    */
   var nav = $('nav[role="navigation"]');
 
-  nav.find("a").addClass("fuchsia").on("click", function(e) {
+  nav.find("a").addClass("fuchsia").css("font-weight", "600").on("click", function(e) {
     e.preventDefault();
   });
 
