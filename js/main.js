@@ -114,7 +114,7 @@ jQuery(function($) {
    */
   var nav = $('nav[role="navigation"]');
 
-  nav.find("a").css("color", "red").delay(800).addClass("fuchsia").on("click", function(e) {
+  nav.find("a").addClass("fuchsia").on("click", function(e) {
     e.preventDefault();
   });
 
