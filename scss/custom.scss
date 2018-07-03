@@ -44,14 +44,8 @@ Helpers
 Global
  */
 .blocks {
-  margin-bottom: 1.3em;
-}
-.block :last-child {
-  margin-bottom: 0;
-}
-/* fix the class below */
-div[class*=" bg-"] {
   padding: 2rem;
+  margin-bottom: 1.3em;
 }
 
 /* Box bg colors */
