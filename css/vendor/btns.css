@@ -18,7 +18,7 @@
 }
 .btn:hover,.btn:focus{
   color:#7FDBFF;
-  border:1px solid #7FDBFF;
+  border-color: #7FDBFF;
   -webkit-transition:background-color .3s,color .3s,border .3s;
   transition:background-color .3s,color .3s,border .3s
 }
