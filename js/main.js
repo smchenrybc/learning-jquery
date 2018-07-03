@@ -110,6 +110,15 @@ jQuery(function($) {
   });
 
   /*
+  Block #8
+   */
+  var nav = $('nav[role="navigation"]');
+
+  nav.find("a").css("color", "red").delay(800).addClass("fuchsia").on("click", function(e) {
+    e.preventDefault();
+  });
+
+  /*
   Box Area
    */
   // set up animation for each box

@@ -1,3 +1,9 @@
+/**
+ * _btns.scss
+ */
+
+.basscss {
+
 .btn,.btn:visited{
   border-radius:.25em;
   border-style:solid;
@@ -137,4 +143,6 @@
   .btn--full{
     max-width:16em!important
   }
+}
+
 }

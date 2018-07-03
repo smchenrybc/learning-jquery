@@ -1,0 +1,257 @@
+/**
+ * _colors.scss
+ */
+.basscss .bg-navy {
+  background-color: #001F3F; }
+
+.basscss .bg-blue {
+  background-color: #0074D9; }
+
+.basscss .bg-aqua {
+  background-color: #7FDBFF; }
+
+.basscss .bg-teal {
+  background-color: #39CCCC; }
+
+.basscss .bg-olive {
+  background-color: #3D9970; }
+
+.basscss .bg-green {
+  background-color: #2ECC40; }
+
+.basscss .bg-lime {
+  background-color: #01FF70; }
+
+.basscss .bg-yellow {
+  background-color: #FFDC00; }
+
+.basscss .bg-orange {
+  background-color: #FF851B; }
+
+.basscss .bg-red {
+  background-color: #FF4136; }
+
+.basscss .bg-fuchsia {
+  background-color: #F012BE; }
+
+.basscss .bg-purple {
+  background-color: #B10DC9; }
+
+.basscss .bg-maroon {
+  background-color: #85144B; }
+
+.basscss .bg-white {
+  background-color: #fff; }
+
+.basscss .bg-gray {
+  background-color: #aaa; }
+
+.basscss .bg-silver {
+  background-color: #ddd; }
+
+.basscss .bg-black {
+  background-color: #111; }
+
+.basscss .navy {
+  color: #001F3F; }
+
+.basscss .blue {
+  color: #0074D9; }
+
+.basscss .aqua {
+  color: #7FDBFF; }
+
+.basscss .teal {
+  color: #39CCCC; }
+
+.basscss .olive {
+  color: #3D9970; }
+
+.basscss .green {
+  color: #2ECC40; }
+
+.basscss .lime {
+  color: #01FF70; }
+
+.basscss .yellow {
+  color: #FFDC00; }
+
+.basscss .orange {
+  color: #FF851B; }
+
+.basscss .red {
+  color: #FF4136; }
+
+.basscss .fuchsia {
+  color: #F012BE; }
+
+.basscss .purple {
+  color: #B10DC9; }
+
+.basscss .maroon {
+  color: #85144B; }
+
+.basscss .white {
+  color: #fff; }
+
+.basscss .silver {
+  color: #ddd; }
+
+.basscss .gray {
+  color: #aaa; }
+
+.basscss .black {
+  color: #111; }
+
+.basscss .border--navy {
+  border-color: #001F3F; }
+
+.basscss .border--blue {
+  border-color: #0074D9; }
+
+.basscss .border--aqua {
+  border-color: #7FDBFF; }
+
+.basscss .border--teal {
+  border-color: #39CCCC; }
+
+.basscss .border--olive {
+  border-color: #3D9970; }
+
+.basscss .border--green {
+  border-color: #2ECC40; }
+
+.basscss .border--lime {
+  border-color: #01FF70; }
+
+.basscss .border--yellow {
+  border-color: #FFDC00; }
+
+.basscss .border--orange {
+  border-color: #FF851B; }
+
+.basscss .border--red {
+  border-color: #FF4136; }
+
+.basscss .border--fuchsia {
+  border-color: #F012BE; }
+
+.basscss .border--purple {
+  border-color: #B10DC9; }
+
+.basscss .border--maroon {
+  border-color: #85144B; }
+
+.basscss .border--white {
+  border-color: #fff; }
+
+.basscss .border--gray {
+  border-color: #aaa; }
+
+.basscss .border--silver {
+  border-color: #ddd; }
+
+.basscss .border--black {
+  border-color: #111; }
+
+.basscss .fill-navy {
+  fill: #001F3F; }
+
+.basscss .fill-blue {
+  fill: #0074D9; }
+
+.basscss .fill-aqua {
+  fill: #7FDBFF; }
+
+.basscss .fill-teal {
+  fill: #39CCCC; }
+
+.basscss .fill-olive {
+  fill: #3D9970; }
+
+.basscss .fill-green {
+  fill: #2ECC40; }
+
+.basscss .fill-lime {
+  fill: #01FF70; }
+
+.basscss .fill-yellow {
+  fill: #FFDC00; }
+
+.basscss .fill-orange {
+  fill: #FF851B; }
+
+.basscss .fill-red {
+  fill: #FF4136; }
+
+.basscss .fill-fuchsia {
+  fill: #F012BE; }
+
+.basscss .fill-purple {
+  fill: #B10DC9; }
+
+.basscss .fill-maroon {
+  fill: #85144B; }
+
+.basscss .fill-white {
+  fill: #fff; }
+
+.basscss .fill-gray {
+  fill: #aaa; }
+
+.basscss .fill-silver {
+  fill: #ddd; }
+
+.basscss .fill-black {
+  fill: #111; }
+
+.basscss .stroke-navy {
+  stroke: #001F3F; }
+
+.basscss .stroke-blue {
+  stroke: #0074D9; }
+
+.basscss .stroke-aqua {
+  stroke: #7FDBFF; }
+
+.basscss .stroke-teal {
+  stroke: #39CCCC; }
+
+.basscss .stroke-olive {
+  stroke: #3D9970; }
+
+.basscss .stroke-green {
+  stroke: #2ECC40; }
+
+.basscss .stroke-lime {
+  stroke: #01FF70; }
+
+.basscss .stroke-yellow {
+  stroke: #FFDC00; }
+
+.basscss .stroke-orange {
+  stroke: #FF851B; }
+
+.basscss .stroke-red {
+  stroke: #FF4136; }
+
+.basscss .stroke-fuchsia {
+  stroke: #F012BE; }
+
+.basscss .stroke-purple {
+  stroke: #B10DC9; }
+
+.basscss .stroke-maroon {
+  stroke: #85144B; }
+
+.basscss .stroke-white {
+  stroke: #fff; }
+
+.basscss .stroke-gray {
+  stroke: #aaa; }
+
+.basscss .stroke-silver {
+  stroke: #ddd; }
+
+.basscss .stroke-black {
+  stroke: #111; }

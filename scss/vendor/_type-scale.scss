@@ -1,3 +1,7 @@
+/**
+ * _type-scale.scss
+ */
+
 html {font-size: 1em;}
 
 body {
@@ -7,7 +11,7 @@ body {
   color: #333;
 }
 
-p {margin: 0 0 1.3em;}
+/* p {margin: 0 0 1.3em;} */
 
 h1, h2, h3, h4 {
   margin: 1.414em 0 0.5em;
@@ -27,3 +31,7 @@ h3 {font-size: 1.563em;}
 h4 {font-size: 1.25em;}
 
 small, .font_small {font-size: 0.8em;}
+
+p, ul, ol, table {
+  margin: 0 0 1.3em;
+}

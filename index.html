@@ -15,29 +15,22 @@
   <!-- Web font -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 
-  <!-- Vendor -->
-  <link rel="stylesheet" href="css/vendor/normalize.css">
-  <link rel="stylesheet" href="css/vendor/type-scale.css">
-  <link rel="stylesheet" href="css/vendor/basscss.css">
-  <link rel="stylesheet" href="css/vendor/colors.css">
-  <link rel="stylesheet" href="css/vendor/btns.css">
-
-  <!-- Main -->
+  <!-- Stylesheet -->
   <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body>
+<body class="basscss">
   <!-- Add your site or application content here -->
   <div class="main max-width-4 mx-auto py3">
     <!-- Title -->
     <h1 class="bold">Learning jQuery</h1>
 
     <!-- Block #1 -->
-    <div id="block-1" class="blocks">
+    <div id="block-1" class="blocks p0">
       <p>Adipisicing proident amet occaecat in mollit consequat est aliquip eiusmod ex. Cillum commodo fugiat adipisicing id ut reprehenderit voluptate ea commodo. In laborum dolor ea et officia dolor eu do. Elit officia in id consequat eu ea nisi in ex ad <code>nostrud</code> non anim adipisicing aliquip cupidatat. Dolor aliqua nostrud ex do irure proident aliqua dolore culpa nulla dolore dolor consectetur incididunt commodo. Ut officia duis nostrud elit ullamco aute dolore ut ex dolore in aliquip mollit occaecat voluptate consectetur.</p>
 
       <!-- Character used below: https://dev.w3.org/html5/html-author/charref -->
-      <a id="block-1-btn" class="btn btn--s btn--gray-border mb2" href="#block-8">Go to bottom &dtrif;</a>
+      <a id="block-1-btn" class="btn btn--s btn--gray-border mb2" href="#block-9">Go to bottom &dtrif;</a>
     </div>
 
     <!-- Block #2 -->
@@ -77,18 +70,18 @@
       <p>Ea minim dolore laboris pariatur magna sunt duis non sit anim consequat. Ut ut velit deserunt cillum magna culpa elit sit irure adipisicing ut dolor eu aliquip veniam non. Fugiat ea ut deserunt incididunt reprehenderit fugiat in culpa occaecat laborum commodo non ad fugiat dolor. Voluptate aliqua magna commodo commodo consectetur magna dolor amet veniam.</p>
 
       <p class="clicker mb0"><b>Click the box below:</b></p>
-      <div class="box bg-white border border--purple mtp"></div>
+      <div class="box border border--purple mtp"></div>
     </div>
 
     <!-- Block #6 -->
-    <div id="block-6" class="blocks bg-white border border--blue mt4">
+    <div id="block-6" class="blocks border border--blue mt4">
       <p class="blue">Ut ut nostrud ad dolore nostrud ad nisi amet dolore ut dolore non excepteur cupidatat exercitation nulla. Labore aute do quis anim velit magna aliquip mollit nulla velit labore. Lorem ipsum mollit excepteur et elit reprehenderit adipisicing elit dolor et ea dolor laborum labore officia dolor ex qui eu. Ad amet sed ad deserunt est voluptate aute nostrud laboris fugiat voluptate ut enim veniam.</p>
 
       <a id="b6-btn-1" class="btn btn--s btn--blue nowrap mr1 event" href="javascript:void(0)">Click me forever!</a>
       <a id="b6-btn-2" class="btn btn--s btn--blue nowrap" href="javascript:void(0)">You can only click me once!</a>
     </div>
 
-    <div id="block-7" class="blocks bg-white border border--red">
+    <div id="block-7" class="blocks border border--red">
       <p class="red">Esse cillum velit deserunt tempor nisi nisi ullamco quis non et sed in excepteur veniam occaecat et sint. Est in voluptate duis id mollit minim duis pariatur esse dolore minim nulla sint in laboris. Veniam sit commodo nisi cupidatat in aliquip veniam nisi adipisicing id sunt dolore consequat officia quis aliquip. Laboris aliqua amet qui deserunt minim ullamco tempor dolor esse eiusmod est laboris.</p>
 
       <form id="email-form">
@@ -96,6 +89,23 @@
         <input class="block mb2" type="email" name="email" placeholder="Your email address" />
         <input class="btn btn--s btn--gray" type="submit" value="Submit" />
       </form>
+    </div>
+
+    <div id="block-8" class="blocks border border--olive">
+      <div class="olive">
+        <h2 class="mt0">Block #8 Nav</h2>
+
+        <nav role="navigation">
+          <ul>
+            <li><a class="" href="#">Link to nowhere #1</a></li>
+            <li><a class="" href="#">Link to nowhere #2</a></li>
+            <li><a class="" href="#">Link to nowhere #3</a></li>
+            <li><a class="" href="#">Link to nowhere #4</a></li>
+          </ul>
+        </nav>
+
+        <p class="mb0">The nav above has a watermelon color scheme.</p>
+      </div>
     </div>
 
     <!-- Box Area -->
@@ -111,8 +121,8 @@
       </div>
     </div>
 
-    <!-- Block #8 -->
-    <div id="block-8" class="blocks bg-gray">
+    <!-- Block #9 -->
+    <div id="block-9" class="blocks bg-gray">
       <p>Everybody's favorite: concept video time! Callbacks are an important concept in JavaScript. They are functions that are called when an action has completed running. Then lend structure and timing to our code.</p>
 
       <p>Take for example the animation we used in the last video. Animations take time to run. What if you want to have something else happen right when that animation finishes? Do you have to do a <code>setTimeout</code> for the same length as the animation? Nope. jQuery gives us callback functions used just for that purpose.</p>
