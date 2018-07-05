@@ -167,6 +167,26 @@ jQuery(function($) {
     e.preventDefault();
   });
 
+  $('#block-8 button').on("click", function() {
+    $(this).after('<div id="json" class="mtp"></div>');
+
+    jsonDIV = $('#block-8 #json');
+
+    jsonDIV.css({
+      "overflow-y": "scroll",
+      "max-height": "300px",
+      "background-color": "#FAFAFA",
+      "padding": "1rem 1.375rem",
+      "border": "1px solid #DDDDDD",
+      "border-radius": "2px"
+    });
+
+    $.getJSON('https://feeds.citibikenyc.com/stations/stations.json', {}, function(data) {
+      var theData = JSON.stringify(data);
+      jsonDIV.html(theData);
+    });
+  });
+
   /*
   Box Area
    */
