@@ -142,6 +142,8 @@ jQuery(function($) {
           data: formData,
           success: function(data) {
             vex.dialog.alert("Your URL was submitted!");
+
+            $('#email-form input[name="link"]').val("");
           },
 
           // if key is invalid
