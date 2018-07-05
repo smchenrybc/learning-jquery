@@ -5,24 +5,30 @@
 /*
 Normalize
  */
-@import "normalize";
+@import "normalize/normalize";
 
 /*
 Type Scale
  */
-@import "type-scale";
+@import "type-scale/type-scale";
 
 /*
 Basscss
  */
-@import "basscss";
+@import "basscss/basscss";
 
 /*
 Colors
  */
-@import "colors";
+@import "mrmrs/colors";
 
 /*
 Buttons
  */
-@import "btns";
+@import "mrmrs/btns";
+
+/*
+Vex
+ */
+@import "vex/vex";
+@import "vex/vex-theme-os";

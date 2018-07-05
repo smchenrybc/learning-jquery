@@ -12,12 +12,15 @@
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
 
-  <!-- Web font -->
-  <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700" rel="stylesheet"> -->
+  <!-- Web font loader -->
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.10/webfont.js"></script>
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="css/main.css">
+
+  <!-- Vex -->
+  <script src="js/vendor/vex.combined.min.js"></script>
+  <script>vex.defaultOptions.className = 'vex-theme-os'</script>
 </head>
 
 <body class="basscss">
@@ -71,7 +74,7 @@
       <p>Ea minim dolore laboris pariatur magna sunt duis non sit anim consequat. Ut ut velit deserunt cillum magna culpa elit sit irure adipisicing ut dolor eu aliquip veniam non. Fugiat ea ut deserunt incididunt reprehenderit fugiat in culpa occaecat laborum commodo non ad fugiat dolor. Voluptate aliqua magna commodo commodo consectetur magna dolor amet veniam.</p>
 
       <p class="clicker mb0"><b>Click the box below:</b></p>
-      <div class="box border border--purple mtp"></div>
+      <div class="box border border--purple bg-white mtp"></div>
     </div>
 
     <!-- Block #6 -->
@@ -85,9 +88,9 @@
     <div id="block-7" class="blocks border border--red">
       <p class="red">Esse cillum velit deserunt tempor nisi nisi ullamco quis non et sed in excepteur veniam occaecat et sint. Est in voluptate duis id mollit minim duis pariatur esse dolore minim nulla sint in laboris. Veniam sit commodo nisi cupidatat in aliquip veniam nisi adipisicing id sunt dolore consequat officia quis aliquip. Laboris aliqua amet qui deserunt minim ullamco tempor dolor esse eiusmod est laboris.</p>
 
-      <form id="email-form">
-        <label class="block bold mb1">Email Address</label>
-        <input class="block mb2" type="email" name="email" placeholder="Your email address" />
+      <form id="email-form" action="" method="POST">
+        <label class="block bold mb1">Link address:</label>
+        <input class="block mb2" type="text" name="link" placeholder="Enter URL here" />
         <input class="btn btn--s btn--gray" type="submit" value="Submit" />
       </form>
     </div>
@@ -128,7 +131,7 @@
 
       <p>Take for example the animation we used in the last video. Animations take time to run. What if you want to have something else happen right when that animation finishes? Do you have to do a <code>setTimeout</code> for the same length as the animation? Nope. jQuery gives us callback functions used just for that purpose.</p>
 
-      <p><strong>Last video watched was: <a href="https://css-tricks.com/lodge/learn-jquery/14-custom-events" target="_blank">#14: Custom Events</a>.</strong></p>
+      <p><strong>Current video is: <a href="https://css-tricks.com/lodge/learn-jquery/16-intro-ajax/" target="_blank">#16: Intro To Ajax</a>.</strong></p>
     </div>
 
     <div class="right mbp">

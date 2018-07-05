@@ -1,5 +1,5 @@
 /**
- * custom.scss
+ * _custom.scss
  */
 
 html {
@@ -11,7 +11,7 @@ html {
 body {
   /* Font fallbacks from: */
   /* https://www.cssfontstack.com */
-  font-family: "Roboto", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-family: "Source Sans Pro", Arial, "Helvetica Neue", Helvetica, sans-serif;
   background-color: white;
 }
 code {
@@ -97,8 +97,11 @@ textarea {
   border-radius: 2px;
 }
 
-#block-7 input[type="email"] {
+#block-7 input[type="email"],
+#block-7 input[type="text"] {
   padding: 0.5em;
+  font-size: 1.5em;
   border: 1px solid #CCCCCC;
   border-radius: 2px;
+  min-width: 500px;
 }

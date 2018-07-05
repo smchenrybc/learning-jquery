@@ -9,7 +9,7 @@ jQuery(function($) {
    */
   WebFont.load({
     google: {
-      families: ['Roboto:300,400,400i,500,700']
+      families: ['Source Sans Pro:300,400,400i,600,700']
     }
   });
 
@@ -106,16 +106,54 @@ jQuery(function($) {
   /*
   Block #7
    */
-  $('#email-form').on("submit", function(event) {
-    event.preventDefault();
+  $('#email-form').on("submit", function(e) {
+    // prevent button from submitting
+    e.preventDefault();
 
-    // trigger event with custom name
-    $(this).trigger("save");
-  });
+    // set var for entered URL
+    var inputURL = $('#email-form input[name="link"]').val();
 
-  // run custom event from above
-  $('#email-form').on("save", function() {
-    console.log(this);
+    // check if field is empty
+    if (inputURL === '') {
+      vex.dialog.alert('Please enter a URL!');
+      return false;
+    }
+
+    // get title of the URL
+    $.ajax({
+      url: inputURL,
+      async: true,
+      success: function(responseHTML) {
+        var articleTitle = $(responseHTML).filter('title').text();
+
+        // set form data params
+        // user key is: MGFxawXIDdVRrYR8ZzylOvk3SjXeWzTW
+        var formData = {
+          devkey: '9OCzLcbxTR4SuTjlT71LLlb7uv3c7V5s',
+          key: 'MGFxawXIDdVRrYR8ZzylOvk3SjXeWzTW',
+          url: inputURL,
+          title: articleTitle
+        }
+
+        // AJAX request to Saved.io
+        $.ajax({
+          type: 'POST',
+          url: 'http://devapi.saved.io/bookmarks/',
+          data: formData,
+          success: function(data) {
+            vex.dialog.alert("Your URL was submitted!");
+          },
+
+          // if key is invalid
+          error: function(data) {
+            vex.dialog.alert("It looks like there was a problem with the URL you entered.");
+          }
+        });
+      },
+      error: function(data) {
+        vex.dialog.alert("We're sorry, but Saved.io can't save the URL you entered.");
+      }
+    });
   });
 
   /*
