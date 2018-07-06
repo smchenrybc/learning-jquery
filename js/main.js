@@ -168,8 +168,13 @@ jQuery(function($) {
   });
 
   $('#block-8 button').on("click", function() {
+    // prevent adding more than one block
+    $('#block-8 #json').remove();
+
+    // add div to contain JSON data
     $(this).after('<div id="json" class="mtp"></div>');
 
+    // get JSON data
     $.getJSON('https://feeds.citibikenyc.com/stations/stations.json', {}, function(data) {
       var theData = JSON.stringify(data);
       $('#block-8 #json').html(theData);
