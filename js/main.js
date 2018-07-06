@@ -197,6 +197,15 @@ jQuery(function($) {
     });
 
   /*
+  Block #10
+   */
+  // add click to make text red, not
+  // using .css method, but by applying class
+  $('#block-10 .btn').on("click", function() {
+    $('#block-10').toggleClass('silver');
+  });
+
+  /*
   Block #11
    */
   // set up animation for each box
