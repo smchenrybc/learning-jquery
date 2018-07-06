@@ -182,7 +182,22 @@ jQuery(function($) {
   });
 
   /*
-  Box Area
+  Block #9
+   */
+  var subhead = $('#block-9 .subhead');
+  subhead
+    .css({
+      "display": "inline-block",
+      "cursor": "pointer",
+      "border-bottom": "1px dashed white"
+    })
+    .on("click", function() {
+      var title = $(this).text();
+      vex.dialog.alert(title);
+    });
+
+  /*
+  Block #11
    */
   // set up animation for each box
   function animateBox() {
