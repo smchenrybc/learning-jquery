@@ -175,9 +175,9 @@ jQuery(function($) {
     $(this).after('<div id="json" class="mtp"></div>');
 
     // get JSON data
-    $.getJSON('https://feeds.citibikenyc.com/stations/stations.json', {}, function(data) {
+    $.getJSON("https://feeds.citibikenyc.com/stations/stations.json", {}, function(data) {
       var theData = JSON.stringify(data);
-      $('#block-8 #json').html(theData);
+      $("#block-8 #json").html(theData);
     });
   });
 
@@ -192,8 +192,7 @@ jQuery(function($) {
       "border-bottom": "1px dashed white"
     })
     .on("click", function() {
-      var title = $(this).text();
-      vex.dialog.alert(title);
+      vex.dialog.alert("I'm a modal window!");
     });
 
   /*
@@ -202,7 +201,10 @@ jQuery(function($) {
   // add click to make text red, not
   // using .css method, but by applying class
   $('#block-10 .btn').on("click", function() {
-    $('#block-10').toggleClass('silver');
+    $.getJSON("https://jsonplaceholder.typicode.com/posts/1", function(data) {
+      var b10data = JSON.stringify(data);
+      vex.dialog.alert(b10data);
+    });
   });
 
   /*
