@@ -207,11 +207,39 @@ jQuery(function($) {
   /*
   Block #11
    */
+  // data used below is from:
+  // https://jsonplaceholder.typicode.com
+
+  // click button, get JSON data
   $('#block-11 .btn').on("click", function() {
-    $.getJSON("https://jsonplaceholder.typicode.com/posts/1", function(data) {
-      var b11data = JSON.stringify(data);
-      vex.dialog.alert(b11data);
-    });
+    // check if <ul> exists
+    if ( $('#block-11').find('ul').length > 0 ) {
+      // remove it if so
+      $('#block-11 ul').remove();
+
+      // change button text
+      $(this).text("Show names");
+    } else {
+      // change button text
+      $(this).text("Hide names");
+
+      // get JSON data
+      $.getJSON("https://jsonplaceholder.typicode.com/users", function(data) {
+        // set empty array
+        var stuff = [];
+
+        // loop through results, add to array
+        $.each(data, function(key, val) {
+          stuff.push("<li id='"+ key +"'>" + val.name + "</li>");
+        });
+
+        // set up <ul> and append to block
+        $("<ul />", {
+          class: "userlist mtp mb0 black",
+          html: stuff.join("")
+        }).appendTo("#block-11");
+      });
+    }
   });
 
   /*
