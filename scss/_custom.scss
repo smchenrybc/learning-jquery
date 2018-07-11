@@ -46,8 +46,11 @@ Helpers
 Global
  */
 .blocks {
-  padding: 2rem;
   margin-bottom: 1.3em;
+}
+[class*="blocks bg-"],
+[class*="blocks border"] {
+  padding: 2rem;
 }
 
 /* Box bg colors */
