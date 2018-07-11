@@ -161,12 +161,6 @@ jQuery(function($) {
   /*
   Block #8
    */
-  var nav = $('nav[role="navigation"]');
-
-  nav.find("a").addClass("fuchsia").css("font-weight", "600").on("click", function(e) {
-    e.preventDefault();
-  });
-
   $('#block-8 button').on("click", function() {
     // prevent adding more than one block
     $('#block-8 #json').remove();
@@ -174,10 +168,16 @@ jQuery(function($) {
     // add div to contain JSON data
     $(this).after('<div id="json" class="mtp"></div>');
 
-    // get JSON data
-    $.getJSON("https://feeds.citibikenyc.com/stations/stations.json", {}, function(data) {
-      var theData = JSON.stringify(data);
-      $("#block-8 #json").html(theData);
+    $.ajax({
+      type: 'GET',
+      url: 'https://feeds.citibikenyc.com/stations/stations.json',
+      success: function(data) {
+        var theData = JSON.stringify(data);
+        $("#block-8 #json").html(theData);
+      },
+      error: function(data) {
+        $("#block-8 #json").html('<span>Sorry, but there was an error with your request.</span>');
+      }
     });
   });
 
@@ -201,14 +201,21 @@ jQuery(function($) {
   // add click to make text red, not
   // using .css method, but by applying class
   $('#block-10 .btn').on("click", function() {
-    $.getJSON("https://jsonplaceholder.typicode.com/posts/1", function(data) {
-      var b10data = JSON.stringify(data);
-      vex.dialog.alert(b10data);
-    });
+    $('#block-10').toggleClass('silver');
   });
 
   /*
   Block #11
+   */
+  $('#block-11 .btn').on("click", function() {
+    $.getJSON("https://jsonplaceholder.typicode.com/posts/1", function(data) {
+      var b11data = JSON.stringify(data);
+      vex.dialog.alert(b11data);
+    });
+  });
+
+  /*
+  Block #12
    */
   // set up animation for each box
   function animateBox() {
