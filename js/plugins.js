@@ -22,3 +22,11 @@
 }());
 
 // Place any jQuery/helper plugins in here.
+
+/*
+Plugins to compile:
+ */
+//@prepros-append vendor/jquery.js
+//@prepros-append vendor/webfont.js
+//@prepros-append vendor/vex.combined.js
+//@prepros-append vendor/handlebars.js

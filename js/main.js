@@ -2,6 +2,14 @@
  * main.js
  */
 
+/*
+Include compiled plugins
+ */
+//@prepros-prepend plugins-dist.js
+
+/*
+Run scripts below:
+ */
 jQuery(function($) {
 
   /*
