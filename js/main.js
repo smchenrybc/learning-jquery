@@ -254,20 +254,21 @@ jQuery(function($) {
   Block #12
    */
   // click the button function
-  $('#block-12 .btn').on("click", function() {
-    if ( $('#block-12 .people').length > 0 ) {
-      $('#block-12 .people').remove();
+  var jsonURL = "data/friends.json";
 
-      $(this).text("Show data");
+  $('#block-12 #b12-btn-1').on("click", function() {
+    if ( $('#block-12 .friends').length > 0 ) {
+      $('#block-12 .friends').remove();
+
+      $(this).text("Show jQuery data");
     } else {
-      $(this).text("Hide data");
+      $(this).text("Hide jQuery data");
 
       $.ajax({
         dataType: "json",
-        url: "https://jsonplaceholder.typicode.com/users",
+        url: jsonURL,
         success: function(data) {
-          data = { 'people': data };
-          // console.log(data);
+          data = { 'friends': data };
           var template = $('#m-template').html();
           var html = Mustache.to_html(template, data);
           $('#m-output').html(html);
@@ -275,6 +276,21 @@ jQuery(function($) {
       });
     }
   });
+
+
+  // Please note: let + const don't work
+  // with Prepros app's JS uglify plugin
+  function loadES6Data() {
+    var theData = "";
+    fetch(jsonURL)
+      .then(response => response.json())
+      .then(json => console.log(json));
+
+    var loadArea = document.getElementById('m-output');
+    loadArea.insertAdjacentHTML('afterend', theData);
+  }
+  var myButton = document.getElementById('b12-btn-2');
+  myButton.addEventListener("click", loadES6Data);
 
   /*
   Block #13

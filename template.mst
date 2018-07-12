@@ -1,0 +1,9 @@
+<div class="friends">
+  {{ #friends }}
+    <div class="friend mt2">
+      <strong>{{ name.first }}</strong>
+      <span class="block">Email: <a href="mailto:{{ email }}">{{ email }}</a></span>
+      <span class="block">Phone: <a href="tel:{{ phone }}">{{ phone }}</a></span>
+    </div>
+  {{ /friends }}
+</div>

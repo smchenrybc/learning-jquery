@@ -130,21 +130,22 @@
     <div id="block-12" class="blocks bg-yellow">
       <!-- Template -->
       <script id="m-template" type="x-tmpl-mustache">
-        <div class="people">
-          {{ #people }}
-            <div class="person mt2">
-              <strong>{{ name }}</strong>
+        <div class="friends">
+          {{ #friends }}
+            <div class="friend mt2">
+              <strong>{{ name.first }}</strong>
               <span class="block">Email: <a href="mailto:{{ email }}">{{ email }}</a></span>
               <span class="block">Phone: <a href="tel:{{ phone }}">{{ phone }}</a></span>
             </div>
-          {{ /people }}
+          {{ /friends }}
         </div>
       </script>
 
       <p>Voluptate in dolor officia reprehenderit dolor cupidatat dolore ea cillum in aliqua. Lorem ipsum non commodo duis et labore velit in sunt id. Aliquip voluptate irure culpa proident occaecat dolore sed qui pariatur adipisicing ex consectetur quis consequat in eu. Voluptate culpa ut est non nulla mollit ex do dolor. Aute in sint amet esse ut non nostrud cupidatat in incididunt anim laborum in do dolore consequat consectetur ut.</p>
 
-      <!-- Button -->
-      <button class="btn btn--s btn--gray-dark">Show data</button>
+      <!-- Buttons -->
+      <button id="b12-btn-1" class="btn btn--s btn--gray-dark mr1" data-type="jquery">Show jQuery data</button>
+      <button id="b12-btn-2" class="btn btn--s btn--gray-dark" data-type="es6">Show ES6 data</button>
 
       <!-- Output -->
       <div id="m-output"></div>
@@ -169,7 +170,7 @@
 
       <p>Take for example the animation we used in the last video. Animations take time to run. What if you want to have something else happen right when that animation finishes? Do you have to do a <code>setTimeout</code> for the same length as the animation? Nope. jQuery gives us callback functions used just for that purpose.</p>
 
-      <p class="mb0"><strong>Current video is: <a href="https://css-tricks.com/lodge/learn-jquery/23-templating-handlebars/" target="_blank">#23: Templating with Handlebars</a>.</strong></p>
+      <p class="mb0"><strong>Current video is: <a href="https://css-tricks.com/lodge/learn-jquery/24-templating-underscore/" target="_blank">#24: Templating with Underscore</a>.</strong></p>
     </div>
 
     <div class="right mbp">
