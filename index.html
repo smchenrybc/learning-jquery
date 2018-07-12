@@ -82,7 +82,7 @@
     </div>
 
     <!-- Block #7 -->
-    <div id="block-7" class="blocks bg-maroon white">
+    <div id="block-7" class="blocks bg-olive white">
       <p>Esse cillum velit deserunt tempor nisi nisi ullamco quis non et sed in excepteur veniam occaecat et sint. Est in voluptate duis id mollit minim duis pariatur esse dolore minim nulla sint in laboris. Veniam sit commodo nisi cupidatat in aliquip veniam nisi adipisicing id sunt dolore consequat officia quis aliquip. Laboris aliqua amet qui deserunt minim ullamco tempor dolor esse eiusmod est laboris.</p>
 
       <form id="email-form" action="" method="POST">
@@ -127,8 +127,27 @@
     </div>
 
     <!-- Block #12 -->
-    <div id="block-12" class="blocks">
-      <p>Nostrud ut dolor ut culpa consectetur esse nisi est quis sunt dolor anim sint nostrud dolor reprehenderit laborum. Eu occaecat aliquip irure dolore in id dolor veniam elit commodo. Nisi ad deserunt cupidatat exercitation veniam irure elit dolor nisi voluptate tempor ea laboris sunt non id eu dolor. Exercitation tempor est ullamco anim dolor id consequat ex ad minim sit ullamco cillum. Cupidatat labore quis do pariatur incididunt est mollit mollit aliquip incididunt aliquip.</p>
+    <div id="block-12" class="blocks bg-yellow">
+      <!-- Template -->
+      <script id="m-template" type="x-tmpl-mustache">
+        <div class="people">
+          {{ #people }}
+            <div class="person mt2">
+              <strong>{{ name }}</strong>
+              <span class="block">Email: <a href="mailto:{{ email }}">{{ email }}</a></span>
+              <span class="block">Phone: <a href="tel:{{ phone }}">{{ phone }}</a></span>
+            </div>
+          {{ /people }}
+        </div>
+      </script>
+
+      <p>Voluptate in dolor officia reprehenderit dolor cupidatat dolore ea cillum in aliqua. Lorem ipsum non commodo duis et labore velit in sunt id. Aliquip voluptate irure culpa proident occaecat dolore sed qui pariatur adipisicing ex consectetur quis consequat in eu. Voluptate culpa ut est non nulla mollit ex do dolor. Aute in sint amet esse ut non nostrud cupidatat in incididunt anim laborum in do dolore consequat consectetur ut.</p>
+
+      <!-- Button -->
+      <button class="btn btn--s btn--gray-dark">Show data</button>
+
+      <!-- Output -->
+      <div id="m-output"></div>
     </div>
 
     <!-- Block #13 -->

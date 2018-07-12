@@ -29,4 +29,4 @@ Plugins to compile:
 //@prepros-append vendor/jquery.js
 //@prepros-append vendor/webfont.js
 //@prepros-append vendor/vex.combined.js
-//@prepros-append vendor/handlebars.js
+//@prepros-append vendor/mustache.js

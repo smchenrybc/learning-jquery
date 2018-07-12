@@ -253,6 +253,32 @@ jQuery(function($) {
   /*
   Block #12
    */
+  // click the button function
+  $('#block-12 .btn').on("click", function() {
+    if ( $('#block-12 .people').length > 0 ) {
+      $('#block-12 .people').remove();
+
+      $(this).text("Show data");
+    } else {
+      $(this).text("Hide data");
+
+      $.ajax({
+        dataType: "json",
+        url: "https://jsonplaceholder.typicode.com/users",
+        success: function(data) {
+          data = { 'people': data };
+          // console.log(data);
+          var template = $('#m-template').html();
+          var html = Mustache.to_html(template, data);
+          $('#m-output').html(html);
+        }
+      });
+    }
+  });
+
+  /*
+  Block #13
+   */
   // set up animation for each box
   function animateBox() {
     box = $(this);
