@@ -27014,17 +27014,14 @@ jQuery(function($) {
 
   // Please note: let + const don't work
   // with Prepros app's JS uglify plugin
-  function loadES6Data() {
-    var theData = "";
-    fetch(jsonURL)
+  function getTheData() {
+    var theData = fetch(jsonURL)
       .then(response => response.json())
-      .then(json => console.log(json));
-
-    var loadArea = document.getElementById('m-output');
-    loadArea.insertAdjacentHTML('afterend', theData);
+      .then(data => { data });
+    console.log(theData)
   }
-  var myButton = document.getElementById('b12-btn-2');
-  myButton.addEventListener("click", loadES6Data);
+  var myButton = document.querySelector('#b12-btn-2');
+  myButton.addEventListener("click", getTheData);
 
   /*
   Block #13
@@ -27055,9 +27052,7 @@ jQuery(function($) {
   // move at the same time
   function animateBoxes(e) {
     e.preventDefault();
-
     var boxes = $('.boxes .box');
-
     boxes.each(animateBox);
   }
 
