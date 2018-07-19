@@ -6,7 +6,7 @@
 Desktop.ini
 Thumbs.db
 
-css/main.css
-css/main.css.map
+assets/css/main.css
+assets/css/main.css.map
 
-js/*-dist.js*
+assets/js/*-dist.js*
