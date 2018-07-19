@@ -2,6 +2,10 @@
 # Read about how to use .gitignore: https://help.github.com/articles/ignoring-files
 # Useful .gitignore templates: https://github.com/github/gitignore
 
+.DS_Store
+Desktop.ini
+Thumbs.db
+
 css/main.css
 css/main.css.map
 
