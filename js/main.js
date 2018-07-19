@@ -277,7 +277,6 @@ jQuery(function($) {
     }
   });
 
-
   // Please note: let + const don't work
   // with Prepros app's JS uglify plugin
   function getTheData() {
